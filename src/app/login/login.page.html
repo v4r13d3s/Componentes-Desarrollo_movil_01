@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Inicio de sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Inicio de sesión</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list>
+    <ion-item>
+      <ion-input label="Ingresa tu nombre" labelPlacement="floating" placeholder="Nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" label="Password" value="NeverGonnaGiveYouUp">
+        <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+      </ion-input>
+    </ion-item>
+    <ion-input
+      type="email"
+      fill="solid"
+      label="Correo electrónico"
+      labelPlacement="floating"
+      helperText="Ingresa un correo válido"
+      errorText="Correo inválido"
+      ngModel
+      email
+    ></ion-input>
+    
+    <ion-button expand="block" routerLink="app/inicio">
+      Ingresar
+    </ion-button>
+  </ion-list>
+</ion-content>
