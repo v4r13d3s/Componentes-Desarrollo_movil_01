@@ -4,10 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { BadgesPage } from './badges.page';
 
 const routes: Routes = [
+  
   {
-    path: '',
-    component: BadgesPage
-  },  {
     path: 'primer-grado',
     loadChildren: () => import('./primer-grado/primer-grado.module').then( m => m.PrimerGradoPageModule)
   },
@@ -22,6 +20,18 @@ const routes: Routes = [
   {
     path: 'stars',
     loadChildren: () => import('./stars/stars.module').then( m => m.StarsPageModule)
+  },
+  {
+    path: 'completed',
+    loadChildren: () => import('./completed/completed.module').then( m => m.CompletedPageModule)
+  },
+  {
+    path: 'warnings',
+    loadChildren: () => import('./warnings/warnings.module').then( m => m.WarningsPageModule)
+  },
+  {
+    path: 'notifications',
+    loadChildren: () => import('./notifications/notifications.module').then( m => m.NotificationsPageModule)
   }
 
 ];

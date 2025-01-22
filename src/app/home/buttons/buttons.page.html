@@ -1,0 +1,118 @@
+<ion-header [translucent]="true">  
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Botones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">buttons</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  
+  <h2 style="display: flex; justify-content: center;">Botones básicos</h2>
+  <div style="display: flex; justify-content: center;">
+  <ion-button style="align-self: center;">Botón por defecto</ion-button>
+  <ion-button [disabled]="true" style="align-self: center;">Botón desabilitado</ion-button>
+  </div>
+
+  <h2 style="display: flex; justify-content: center;">Botones expandidos</h2>
+  <ion-button expand="block">Block</ion-button>
+  <ion-button expand="full">Full</ion-button>
+
+  <h2 style="display: flex; justify-content: center;">Botones redondos e iconos</h2>
+  <div style="display: flex; justify-content: center;">
+    <ion-button shape="round">Redondo</ion-button>
+    <ion-button>
+      <ion-icon slot="icon-only" name="heart"></ion-icon>
+    </ion-button>
+    <ion-button shape="round">
+      <ion-icon slot="icon-only" name="heart"></ion-icon>
+    </ion-button>
+  </div>
+
+  <h2 style="display: flex; justify-content: center;">Botones con o sin relleno</h2>
+  <div style="display: flex; justify-content: center;">
+    <ion-button fill="clear">Clear</ion-button>
+    <ion-button fill="outline">Outline</ion-button>
+    <ion-button fill="solid">Solid</ion-button>
+  </div>
+
+  <h2 style="display: flex; justify-content: center;">Botón pequeño, mediano y grande</h2>
+  <div style="display: flex; justify-content: center;">
+    <ion-button size="small" style="align-self: center;">Small</ion-button>
+    <ion-button size="default" style="align-self: center;">Default</ion-button>
+    <ion-button size="large" style="align-self: center;">Large</ion-button>
+  </div>
+
+  <h2 style="display: flex; justify-content: center;">Botón con icon, pequeño, mediano y grande</h2>
+    <div style="display: flex; justify-content: center;">
+    <ion-button size="small" style="align-self: center;">
+      <ion-icon slot="icon-only" ios="logo-apple" md="settings-sharp"></ion-icon>
+    </ion-button>
+
+    <ion-button style="align-self: center;">
+      <ion-icon slot="icon-only" ios="logo-apple" md="settings-sharp"></ion-icon>
+    </ion-button>
+
+    <ion-button size="large" style="align-self: center;">
+      <ion-icon slot="icon-only" ios="logo-apple" md="settings-sharp"></ion-icon>
+    </ion-button>
+    </div>
+
+    <h2 style="display: flex; justify-content: center;">Botón con icon a la izquierda</h2>
+    <div style="display: flex; justify-content: center;">
+    <ion-button size="small" style="align-self: center;">
+      <ion-icon slot="start" name="star"></ion-icon>
+      Left Icon
+    </ion-button>
+
+    <ion-button style="align-self: center;">
+      <ion-icon slot="start" name="star"></ion-icon>
+      Left Icon
+    </ion-button>
+
+    <ion-button size="large" style="align-self: center;">
+      <ion-icon slot="start" name="star"></ion-icon>
+      Left Icon
+    </ion-button>
+    </div>
+
+    <h2 style="display: flex; justify-content: center;">Botón con icon a la derecha</h2>
+    <div style="display: flex; justify-content: center;">
+    <ion-button size="small" style="align-self: center;">
+      Right Icon
+      <ion-icon slot="end" name="heart"></ion-icon>
+    </ion-button>
+
+    <ion-button style="align-self: center;">
+      Right Icon
+      <ion-icon slot="end" name="heart"></ion-icon>
+    </ion-button>
+
+    <ion-button size="large" style="align-self: center;">
+      Right Icon
+      <ion-icon slot="end" name="heart"></ion-icon>
+    </ion-button>
+    </div>
+  
+  <h2 style="display: flex; justify-content: center;">Botones con los colores básicos</h2>
+  <div style="display: flex; justify-content: center;">
+  <ion-item >
+    <ion-button color="primary">Primary</ion-button>
+    <ion-button color="secondary">Secondary</ion-button>
+    <ion-button color="tertiary">Tertiary</ion-button>
+    <ion-button color="success">Success</ion-button>
+    <ion-button color="warning">Warning</ion-button>
+    <ion-button color="danger">Danger</ion-button>
+    <ion-button color="light">Light</ion-button>
+    <ion-button color="medium">Medium</ion-button>
+    <ion-button color="dark">Dark</ion-button>
+  </ion-item>
+  </div>
+</ion-content>
