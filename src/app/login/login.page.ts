@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -13,8 +14,11 @@ export class LoginPage implements OnInit {
   email: String = ''; // Inicialización directa, las comillas representan una cadena vaciac:\Users\Oscar\Desktop\Práctica Puerta Inteligente 
   password: String = ''; 
   //No es tan recomendada esta forma para inicializar una variable
-  constructor() {
+  constructor(
+    private navController: NavController, //Nav controler me permite 
+  ) {
     // Segunda manera para inicializar una variable
+    
    }
 
   ngOnInit() {
@@ -25,6 +29,7 @@ export class LoginPage implements OnInit {
 
     console.log('email: ', this.email);
     console.log('password: ', this.password);
+
 
     console.log(form.value);
     
@@ -41,6 +46,7 @@ export class LoginPage implements OnInit {
     }
 
     if(this.email == 'Admin' && this.password == 'Admin'){
+      this.navController.navigateForward('/home') //Este también nos permite pasar parametros entre páginas
       console.log('El Correo y la contraseña es correcto');
     } else {
       console.log('El Correo y la contraseña es incorrecto');
