@@ -1,6 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>register</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registro</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,4 +13,31 @@
       <ion-title size="large">register</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <div style="display: flex; justify-content: center; flex-direction: column;">
+  <ion-item>
+    <ion-input label="Nombre" labelPlacement="floating" placeholder="Ingresa tu nombre"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Apellidos" labelPlacement="floating" placeholder="Ingresa tus apellidos"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Ingresa tu ciudad" labelPlacement="floating" placeholder="Ciudad"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Correo electronico" labelPlacement="floating" placeholder="Ingresa tu correo"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Contraseña" labelPlacement="floating" placeholder="Contraseña" required></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-input label="Confirma tu contraseña" labelPlacement="floating" placeholder="Confirma contraseña" required></ion-input>
+  </ion-item>
+</div>
+  
 </ion-content>
