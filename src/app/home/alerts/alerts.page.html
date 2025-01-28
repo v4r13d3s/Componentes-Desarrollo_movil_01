@@ -1,6 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>alerts</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Alerts</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,4 +13,47 @@
       <ion-title size="large">alerts</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <h2 style="display: flex; justify-content: center;">Inline Alerts</h2>
+  <div style="display: flex; justify-content: center;">
+  <ion-button id="alerta-1">Click aqui</ion-button>
+  <ion-alert trigger="alerta-1" header="La primera alerta" subHeader="Un subtitulo para la alerta"
+    message="Esta es la primera alerta" [buttons]="alertaUno"></ion-alert>
+  </div>
+
+  <h2 style="display: flex; justify-content: center;">Using isOpen</h2>
+  <div style="display: flex; justify-content: center;">
+  <ion-button (click)="setOpen(true)">Click aqui</ion-button>
+  <ion-alert [isOpen]="isAlertOpen" header="Titulo de la alerta" subHeader="Subtitulo de la alerta"
+    message="Esta es la segunda alerta" [buttons]="alertaDos"
+    (didDismiss)="setOpen(false)"></ion-alert>
+  </div>
+
+  <h2 style="display: flex; justify-content: center;">Buttons</h2>
+  <div style="display: flex; justify-content: center;">
+  <ion-button id="alerta-2">Click aqui</ion-button>
+  <ion-alert trigger="alerta-2" header="Alert!" [buttons]="alertaBotones"
+    (didDismiss)="setResult($event)"></ion-alert>
+  </div>
+
+  <h2 style="display: flex; justify-content: center;">Inputs</h2>  
+  <div style="display: flex; justify-content: center;">
+  <ion-button id="alerta-3">Click aqui</ion-button>
+  <ion-alert trigger="alerta-3" header="Escribe tu información por favor" [buttons]="alertButtons"
+    [inputs]="alertInputs"></ion-alert>
+  </div>
+
+  <h2 style="display: flex; justify-content: center;">Radio Example</h2>
+  <div style="display: flex; justify-content: center;">
+  <ion-button id="alerta-4">Click aqui</ion-button>
+  <ion-alert trigger="alerta-4" header="Selecciona tu color favorito" [buttons]="alertaRadio"
+    [inputs]="alertaEntrada"></ion-alert>
+  </div>
+
+  <h2 style="display: flex; justify-content: center;">Customization</h2>
+  <div style="display: flex; justify-content: center;">
+  <ion-button id="alerta-5">Click aqui</ion-button>
+  <ion-alert trigger="alerta-5" class="custom-alert" header="¿Estás seguro?" [buttons]="alertaPersonalizada"></ion-alert>
+  </div>
+
 </ion-content>
