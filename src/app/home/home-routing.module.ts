@@ -10,6 +10,14 @@ const routes: Routes = [
   {
     path: 'buttons',
     loadChildren: () => import('./buttons/buttons.module').then( m => m.ButtonsPageModule)
+  },
+  {
+    path: 'accordion',
+    loadChildren: () => import('./accordion/accordion.module').then( m => m.AccordionPageModule)
+  },
+  {
+    path: 'alerts',
+    loadChildren: () => import('./alerts/alerts.module').then( m => m.AlertsPageModule)
   }
 ];
 

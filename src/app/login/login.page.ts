@@ -11,7 +11,7 @@ import { NavController } from '@ionic/angular';
 export class LoginPage implements OnInit {
   // Con TypeScript 
 
-  email: String = ''; // Inicialización directa, las comillas representan una cadena vaciac:\Users\Oscar\Desktop\Práctica Puerta Inteligente 
+  email: String = ''; // Inicialización directa, las comillas representan una cadena vacia
   password: String = ''; 
   //No es tan recomendada esta forma para inicializar una variable
   constructor(
