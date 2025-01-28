@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'badges',
     loadChildren: () => import('./badges/badges.module').then( m => m.BadgesPageModule)
+  },
+  {
+    path: 'cards',
+    loadChildren: () => import('./cards/cards.module').then( m => m.CardsPageModule)
   }
 ];
 

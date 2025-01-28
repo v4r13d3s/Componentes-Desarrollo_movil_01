@@ -14,30 +14,37 @@
     </ion-toolbar>
   </ion-header>
 
-  <div style="display: flex; justify-content: center; flex-direction: column;">
-  <ion-item>
-    <ion-input label="Nombre" labelPlacement="floating" placeholder="Ingresa tu nombre"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-input label="Apellidos" labelPlacement="floating" placeholder="Ingresa tus apellidos"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-input label="Ingresa tu ciudad" labelPlacement="floating" placeholder="Ciudad"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-input label="Correo electronico" labelPlacement="floating" placeholder="Ingresa tu correo"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-input label="Contraseña" labelPlacement="floating" placeholder="Contraseña" required></ion-input>
-  </ion-item>
+  <form #oscar="ngForm" (ngSubmit)="login(oscar)">
+    
+      <ion-item>
+        <ion-input label="Nombre" labelPlacement="floating" placeholder="Ingresa tu nombre" required></ion-input>
+      </ion-item>
   
-  <ion-item>
-    <ion-input label="Confirma tu contraseña" labelPlacement="floating" placeholder="Confirma contraseña" required></ion-input>
-  </ion-item>
-</div>
+      <ion-item>
+        <ion-input label="Apellidos" labelPlacement="floating" placeholder="Ingresa tus apellidos" required></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input label="Ingresa tu ciudad" labelPlacement="floating" placeholder="Ciudad" required></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input name="email" [(ngModel)]="email" label="Correo electronico" labelPlacement="floating" placeholder="Ingresa tu correo" required></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input name="password" [(ngModel)]="password" label="Contraseña" labelPlacement="floating" placeholder="Contraseña" required></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input label="Confirma tu contraseña" labelPlacement="floating" placeholder="Confirma contraseña"
+          required></ion-input>
+      </ion-item>
+
+      <ion-button type="submit">
+        Registro
+      </ion-button>
+    
+  </form>
   
 </ion-content>

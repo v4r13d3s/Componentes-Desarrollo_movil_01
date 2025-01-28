@@ -1,0 +1,174 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cards</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">cards</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <h2>Primera Card</h2>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Titulo de la Card</ion-card-title>
+      <ion-card-subtitle>Subtitulo de la card</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Aqui hay un pequeño contenido sobre la carta. Nothing more, nothing less.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img alt="Programación" src="https://administraciondesistemas.com/wp-content/uploads/2024/01/lenguajes-programacion-unsplash.jpg" />
+    <ion-card-header>
+      <ion-card-title>Programación</ion-card-title>
+      <ion-card-subtitle>Programación orientado a objetos</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Write once, run everywhere
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Titulo de la Card</ion-card-title>
+      <ion-card-subtitle>Subtitulo de la card</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Aqui una pequeña descripción de la card.
+    </ion-card-content>
+  
+    <ion-button fill="clear">Acción 1</ion-button>
+    <ion-button fill="clear">Acción 2</ion-button>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Lenguajes de programación</ion-card-title>
+      <ion-card-subtitle>Lenguajes más usados</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://okhosting.com/wp-content/uploads/2019/01/java.jpg" />
+          </ion-thumbnail>
+          <ion-label>Java</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/640px-Unofficial_JavaScript_logo_2.svg.png" />
+          </ion-thumbnail>
+          <ion-label>JavaScript</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://i0.wp.com/junilearning.com/wp-content/uploads/2020/06/python-programming-language.webp?fit=800%2C800&ssl=1" />
+          </ion-thumbnail>
+          <ion-label>Python</ion-label>
+        </ion-item>
+  
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://www.ntrrg.dev/es/blog/go-golang/images/go.png" />
+          </ion-thumbnail>
+          <ion-label>GO</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card color="primary">
+    <ion-card-header>
+      <ion-card-title>Azul blue</ion-card-title>
+      <ion-card-subtitle>Azulito</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content> Un tsuru azul </ion-card-content>
+  </ion-card>
+  
+  <ion-card color="secondary">
+    <ion-card-header>
+      <ion-card-title>Azul Rey</ion-card-title>
+      <ion-card-subtitle>El azul</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content> Azul más fuerte </ion-card-content>
+  </ion-card>
+  
+  <ion-card color="tertiary">
+    <ion-card-header>
+      <ion-card-title>Morao</ion-card-title>
+      <ion-card-subtitle>Mora Mora </ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content> Morado como las moras azules, aunque en realidad son azules, no moradas... </ion-card-content>
+  </ion-card>
+  
+  <ion-card color="success">
+    <ion-card-header>
+      <ion-card-title>Verde Verde</ion-card-title>
+      <ion-card-subtitle>Verde de completado</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content> Logro completado! </ion-card-content>
+  </ion-card>
+  
+  <ion-card color="warning">
+    <ion-card-header>
+      <ion-card-title>Amarillo de peligro</ion-card-title>
+      <ion-card-subtitle>Peligroso</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content> Una carte de peligro </ion-card-content>
+  </ion-card>
+  
+  <ion-card color="danger">
+    <ion-card-header>
+      <ion-card-title>Rojo de peligro peligro</ion-card-title>
+      <ion-card-subtitle>Muy peligroso!</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content> Lo más peligroso que hay, presiona el botón del caos! </ion-card-content>
+  </ion-card>
+  
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Blanco</ion-card-title>
+      <ion-card-subtitle>Carta blanca</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content> Carta blanca sin contenido, ingresa tu contenido... </ion-card-content>
+  </ion-card>
+  
+  <ion-card color="medium">
+    <ion-card-header>
+      <ion-card-title>Gris</ion-card-title>
+      <ion-card-subtitle>Carta gris</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content> Más gris que el cielo no se puede </ion-card-content>
+  </ion-card>
+  
+  <ion-card color="dark">
+    <ion-card-header>
+      <ion-card-title>Oscuro</ion-card-title>
+      <ion-card-subtitle>Carta oscura</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content> Carta oscura como el mago oscuro :D </ion-card-content>
+  </ion-card>
+</ion-content>
