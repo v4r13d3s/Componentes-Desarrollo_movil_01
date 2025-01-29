@@ -20,15 +20,13 @@
 <ion-content [fullscreen]="true">
   <ion-list>
     <app-item-chat
-    username="Oscar Iván"
+    *ngFor="let chat of chats" 
+    username="chat"
     message="Bienvenido al curso de DNM"
     date="13:44"
     avatarUrl="https://ionicframework.com/docs/img/demos/avatar.svg"
     ></app-item-chat>
-    <app-item-chat></app-item-chat>
-    <app-item-chat></app-item-chat>
-    <app-item-chat></app-item-chat>
-    <app-item-chat></app-item-chat>
+    
   </ion-list>
   <ion-header collapse="condense">
     <ion-toolbar>
