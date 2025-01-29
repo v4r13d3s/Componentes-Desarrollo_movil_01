@@ -1,0 +1,20 @@
+<ion-item>
+  <ion-avatar aria-hidden="true" slot="start">
+    <img alt="" [src]="avatarUrl" />
+  </ion-avatar>
+  
+  <ion-label>
+    <strong>{{username}}</strong><br>
+    
+    <ion-note color="medium" class="ion-text-wrap">That is all.</ion-note>
+  </ion-label>
+  
+  <div class="metadata-end-wrapper" slot="end">
+    <ion-note color="medium"
+    class="ion-text-wrap"
+    
+    >{{message}}
+    03:44</ion-note>
+    <ion-icon color="medium" name="chevron-forward" class="ion-date" >{{date}}</ion-icon>
+  </div>
+</ion-item>

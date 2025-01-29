@@ -40,7 +40,7 @@ export class RegisterPage implements OnInit {
         return; //Con el return le digo que ya no continue con la ejecución
       }
   
-      if(this.email == 'Amin' && this.password == 'Admin'){
+      if(this.email == 'Admin' && this.password == 'Admin'){
         this.navController.navigateForward('/app/login') //Este también nos permite pasar parametros entre páginas
         console.log('Ingresa a tu cuenta');
       } else {
